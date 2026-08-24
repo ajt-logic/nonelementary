@@ -7,18 +7,18 @@
     <link>https://nonelementary.com</link>
     <description>Notes from a long return to mathematical logic and model theory.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Aug 2026 16:12:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 16:14:00 GMT</lastBuildDate>
     <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
     <ttl>60</ttl>
-    <managingEditor>aarnejohannestalman@gmail.com (AJT)</managingEditor>
-    <webMaster>aarnejohannestalman@gmail.com (AJT)</webMaster>
+    <managingEditor>talman.aarne@gmail.com (AJT)</managingEditor>
+    <webMaster>talman.aarne@gmail.com (AJT)</webMaster>
     <atom:link href="https://nonelementary.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KaTeX Test — Substitution and a Short Proof</title>
       <link>https://nonelementary.com/posts/katex-test.html</link>
       <guid isPermaLink="true">https://nonelementary.com/posts/katex-test.html</guid>
       <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
-      <author>aarnejohannestalman@gmail.com (AJT)</author>
+      <author>talman.aarne@gmail.com (AJT)</author>
       <category>First-Order Logic</category>
       <category>Model Theory</category>
       <description>A test post exercising inline math, displayed equations, heavy sub/superscripts, and a short numbered proof.</description>
@@ -59,7 +59,7 @@ A_2:\ \big(\alpha \rightarrow (\beta \rightarrow \gamma)\big) \rightarrow \big((
       <link>https://nonelementary.com/posts/not-first-order-not-easy.html</link>
       <guid isPermaLink="true">https://nonelementary.com/posts/not-first-order-not-easy.html</guid>
       <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
-      <author>aarnejohannestalman@gmail.com (AJT)</author>
+      <author>talman.aarne@gmail.com (AJT)</author>
       <category>Model Theory</category>
       <description>Why the blog is named after a theorem about finiteness, and what it&#39;s for.</description>
       <content:encoded><![CDATA[<h1>Not first-order, not easy</h1>
