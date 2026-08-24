@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>nonelementary</title>
+  <title>Non-elementary</title>
   <link href="https://nonelementary.com" rel="alternate" type="text/html" />
   <link href="https://nonelementary.com/atom.xml" rel="self" type="application/atom+xml" />
   <id>https://nonelementary.com/</id>
@@ -28,7 +28,7 @@
 <p>Suppose $T$ is a first-order theory, in some language $\mathcal{L}$, with arbitrarily large finite models — a theory of groups, say, or of linear orders — and suppose, for contradiction, that every model of $T$ is finite. For each $n \geq 1$, let</p>
 <div class="katex-display-wrapper">$$\varphi_n \;\equiv\; \exists x_1 \cdots \exists x_n \bigwedge_{1 \le i &lt; j \le n} x_i \neq x_j,$$</div>
 <p>the sentence asserting at least $n$ distinct elements, and set $\Gamma = T \cup \{\varphi_n : n \in \mathbb{N}\}$. Any finite subset $\Gamma_0 \subseteq \Gamma$ mentions only finitely many of the $\varphi_n$, so some $N$ bounds the ones it contains; since $T$ has a finite model with at least $N$ elements, $\Gamma_0$ is satisfiable. By compactness, $\Gamma$ is satisfiable too — there is some $M \vDash \Gamma$. But $M \vDash \varphi_n$ for every $n$, so $M$ is infinite, while $M \vDash T$, contradicting the assumption that every model of $T$ is finite. No first-order theory can have exactly the finite structures as its models: finiteness is not elementary. Well-ordering fails to be elementary for the same reason, and so does torsion in groups.</p>
-<p><em>Nonelementary</em> is that theorem, and also a joke about how the subject feels twenty years after I last did any of it seriously.</p>
+<p><em>non-elementary</em> is that theorem, and also a joke about how the subject feels twenty years after I last did any of it seriously.</p>
 <p>I wrote an undergraduate thesis on Gödel&#39;s incompleteness theorems two decades ago. After that came a master&#39;s in logic and formal grammar, a PhD in computational linguistics, and a career in AI, over the course of which most of the logic itself quietly fell out of my head. This blog is where it&#39;s getting put back — evenings and weekends, alongside full-time work, which makes it a multi-year project rather than a course with an end date.</p>
 <p>The field I work in now has no shortage of people who can build systems, and a real shortage of people who understand what is underneath them. I would like to be in the second group. I don&#39;t think there is a fast way to get there: it takes doing the proofs rather than reading about them, and it takes years rather than weekends.</p>
 <p>What ends up here will mostly be notes from that work — proofs that took longer than they should have, places where the intuition was wrong, occasionally some history or philosophy when it changes how a piece of mathematics reads. There is no fixed schedule, and no promise that the whole plan survives contact with the material.</p>
