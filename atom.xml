@@ -8,9 +8,8 @@
   <subtitle>Notes from a long return to mathematical logic and model theory.</subtitle>
   <author>
     <name>AJT</name>
-    <email>talman.aarne@gmail.com</email>
   </author>
-  <generator>Monoblogger/generator>
+  <generator>Monoblogger</generator>
   <entry>
     <id>https://nonelementary.com/posts/katex-test.html</id>
     <title type="html">KaTeX Test — Substitution and a Short Proof</title>
@@ -19,7 +18,6 @@
     <updated>2026-08-24T00:00:00.000Z</updated>
     <author>
       <name>AJT</name>
-      <email>talman.aarne@gmail.com</email>
     </author>
     <category term="First-Order Logic" />
     <category term="Model Theory" />
@@ -68,7 +66,6 @@ A_2:\ \big(\alpha \rightarrow (\beta \rightarrow \gamma)\big) \rightarrow \big((
     <updated>2026-08-24T00:00:00.000Z</updated>
     <author>
       <name>AJT</name>
-      <email>talman.aarne@gmail.com</email>
     </author>
     <category term="Model Theory" />
     <summary type="html">Why the blog is named after a theorem about finiteness, and what it&#39;s for.</summary>

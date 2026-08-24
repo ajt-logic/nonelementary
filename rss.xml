@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nonelementary</title>
     <link>https://nonelementary.com</link>
     <description>Notes from a long return to mathematical logic and model theory.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Aug 2026 16:14:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 16:16:28 GMT</lastBuildDate>
     <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
     <ttl>60</ttl>
-    <managingEditor>talman.aarne@gmail.com (AJT)</managingEditor>
-    <webMaster>talman.aarne@gmail.com (AJT)</webMaster>
     <atom:link href="https://nonelementary.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KaTeX Test — Substitution and a Short Proof</title>
       <link>https://nonelementary.com/posts/katex-test.html</link>
       <guid isPermaLink="true">https://nonelementary.com/posts/katex-test.html</guid>
       <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
-      <author>talman.aarne@gmail.com (AJT)</author>
+      <dc:creator>AJT</dc:creator>
       <category>First-Order Logic</category>
       <category>Model Theory</category>
       <description>A test post exercising inline math, displayed equations, heavy sub/superscripts, and a short numbered proof.</description>
@@ -59,7 +58,7 @@ A_2:\ \big(\alpha \rightarrow (\beta \rightarrow \gamma)\big) \rightarrow \big((
       <link>https://nonelementary.com/posts/not-first-order-not-easy.html</link>
       <guid isPermaLink="true">https://nonelementary.com/posts/not-first-order-not-easy.html</guid>
       <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
-      <author>talman.aarne@gmail.com (AJT)</author>
+      <dc:creator>AJT</dc:creator>
       <category>Model Theory</category>
       <description>Why the blog is named after a theorem about finiteness, and what it&#39;s for.</description>
       <content:encoded><![CDATA[<h1>Not first-order, not easy</h1>
