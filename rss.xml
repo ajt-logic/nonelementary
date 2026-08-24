@@ -8,7 +8,7 @@
     <link>https://nonelementary.com</link>
     <description>Notes from a long return to mathematical logic and model theory.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Aug 2026 17:19:03 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 17:27:57 GMT</lastBuildDate>
     <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
     <ttl>60</ttl>
     <atom:link href="https://nonelementary.com/rss.xml" rel="self" type="application/rss+xml" />
@@ -27,7 +27,7 @@
 <p>the sentence asserting at least $n$ distinct elements, and set $\Gamma = T \cup \{\varphi_n : n \in \mathbb{N}\}$. Any finite subset $\Gamma_0 \subseteq \Gamma$ mentions only finitely many of the $\varphi_n$, so some $N$ bounds the ones it contains; since $T$ has a finite model with at least $N$ elements, $\Gamma_0$ is satisfiable. By compactness, $\Gamma$ is satisfiable too, so there is some $M \vDash \Gamma$. But $M \vDash \varphi_n$ for every $n$, so $M$ is infinite, while $M \vDash T$, contradicting the assumption that every model of $T$ is finite. No first-order theory can have exactly the finite structures as its models: finiteness is not elementary. Well-ordering fails to be elementary for the same reason, and so does torsion in groups.</p>
 <p><em>Non-elementary</em> is that theorem, and also a joke about how the subject feels twenty years after I last did any of it seriously.</p>
 <p>I wrote an undergraduate thesis on Gödel&#39;s incompleteness theorems two decades ago. After that came a master&#39;s in logic and formal grammar, a PhD in computational linguistics, and a career in AI. Along the way, most of the logic itself quietly fell out of my head. This blog is where it&#39;s getting put back, evenings and weekends, alongside full-time work. It&#39;s a multi-year project, not a course with an end date.</p>
-<p>The field I work in now has no shortage of people who can build systems, and a real shortage of people who understand what is underneath them. I would like to be in the second group. I don&#39;t think there is a fast way to get there: it takes doing the proofs rather than reading about them, and it takes years rather than weekends.</p>
+<p>I don&#39;t think logic is the hidden foundation of AI. But most of my work rewards moving fast and staying on the surface, and I wanted something that rewards the opposite: understanding one thing properly, all the way down, rather than just well enough to use it. Logic is what I already know how to do that with. It takes doing the proofs, not reading about them, and it takes years rather than weekends.</p>
 <p>What ends up here will mostly be notes from that work: proofs that took longer than they should have, places where the intuition was wrong, occasionally some history or philosophy when it changes how a piece of mathematics reads. There is no fixed schedule, and no promise that the whole plan survives contact with the material.</p>
 ]]></content:encoded>
     </item>
