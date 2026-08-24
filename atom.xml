@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>nonelementary</title>
+  <link href="https://nonelementary.com" rel="alternate" type="text/html" />
+  <link href="https://nonelementary.com/atom.xml" rel="self" type="application/atom+xml" />
+  <id>https://nonelementary.com/</id>
+  <updated>2026-08-24T00:00:00.000Z</updated>
+  <subtitle>Notes from a long return to mathematical logic and model theory.</subtitle>
+  <author>
+    <name>AJT</name>
+    <email>aarnejohannestalman@gmail.com</email>
+  </author>
+  <generator>Monoblogger/generator>
+  <entry>
+    <id>https://nonelementary.com/posts/katex-test.html</id>
+    <title type="html">KaTeX Test — Substitution and a Short Proof</title>
+    <link href="https://nonelementary.com/posts/katex-test.html" rel="alternate" type="text/html" />
+    <published>2026-08-24T00:00:00.000Z</published>
+    <updated>2026-08-24T00:00:00.000Z</updated>
+    <author>
+      <name>AJT</name>
+      <email>aarnejohannestalman@gmail.com</email>
+    </author>
+    <category term="First-Order Logic" />
+    <category term="Model Theory" />
+    <summary type="html">A test post exercising inline math, displayed equations, heavy sub/superscripts, and a short numbered proof.</summary>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<h1>KaTeX Rendering Test</h1>
+<p>This post exists to check that math renders correctly on <strong>nonelementary</strong>. Nothing here is deep — just enough logic to stress-test inline symbols, display equations, and dense subscript/superscript notation, including the cases (bare underscores, escaped braces, <code>\\</code> line breaks) that markdown parsers tend to mangle.</p>
+<h2>Inline symbols</h2>
+<p>In first-order logic we write $\Gamma \vDash \varphi$ for semantic entailment and $\Gamma \vdash \varphi$ for syntactic derivability. Soundness says $\Gamma \vdash \varphi$ implies $\Gamma \vDash \varphi$; completeness gives the converse. Quantifiers $\forall x$ and $\exists x$ range over a domain, $a \in D$ is domain membership, $A \subseteq B$ is substructure inclusion, and set-builder notation like $\{x : \varphi(x)\}$ picks out a definable subset.</p>
+<h2>A displayed equation</h2>
+<p>The compactness theorem:</p>
+<div class="katex-display-wrapper">$$\Gamma \vDash \varphi \iff \text{there is a finite } \Gamma_0 \subseteq \Gamma \text{ such that } \Gamma_0 \vDash \varphi$$</div>
+<p>And soundness/completeness together, as an aligned pair:</p>
+<div class="katex-display-wrapper">$$\begin{aligned}
+\Gamma \vdash \varphi &amp;\implies \Gamma \vDash \varphi \quad \text{(soundness)} \\
+\Gamma \vDash \varphi &amp;\implies \Gamma \vdash \varphi \quad \text{(completeness)}
+\end{aligned}$$</div>
+<h2>Substitution, subscripts and superscripts</h2>
+<p>The substitution axiom schema of first-order logic:</p>
+<div class="katex-display-wrapper">$$\forall x\, \alpha \rightarrow \alpha^{x}_{t}$$</div>
+<p>Here $\alpha^{x}_{t}$ denotes the formula obtained by replacing every free occurrence of $x$ in $\alpha$ with the term $t$, provided $t$ is substitutable for $x$ in $\alpha$ (no free variable of $t$ becomes bound). Substitutions can stack: $\big(\alpha^{x}_{t}\big)^{y}_{s} = \alpha^{x,y}_{t,s}$ when $x \neq y$ and neither substitution captures the other&#39;s variables.</p>
+<h2>A short numbered proof</h2>
+<p>Claim: $\vdash \alpha \rightarrow \alpha$, from the Hilbert-style axioms</p>
+<div class="katex-display-wrapper">$$A_1:\ \alpha \rightarrow (\beta \rightarrow \alpha), \qquad
+A_2:\ \big(\alpha \rightarrow (\beta \rightarrow \gamma)\big) \rightarrow \big((\alpha \rightarrow \beta) \rightarrow (\alpha \rightarrow \gamma)\big)$$</div>
+<p>and modus ponens (MP).</p>
+<ol>
+<li>$\alpha \rightarrow \big((\alpha \rightarrow \alpha) \rightarrow \alpha\big)$ — instance of $A_1$, with $\beta := \alpha \rightarrow \alpha$.</li>
+<li>$\big(\alpha \rightarrow ((\alpha \rightarrow \alpha) \rightarrow \alpha)\big) \rightarrow \big((\alpha \rightarrow (\alpha \rightarrow \alpha)) \rightarrow (\alpha \rightarrow \alpha)\big)$ — instance of $A_2$, with $\beta := \alpha \rightarrow \alpha$, $\gamma := \alpha$.</li>
+<li>$\big(\alpha \rightarrow (\alpha \rightarrow \alpha)\big) \rightarrow (\alpha \rightarrow \alpha)$ — MP on 1, 2.</li>
+<li>$\alpha \rightarrow (\alpha \rightarrow \alpha)$ — instance of $A_1$, with $\beta := \alpha$.</li>
+<li>$\alpha \rightarrow \alpha$ — MP on 4, 3.</li>
+</ol>
+<p>$\blacksquare$</p>
+<p>This post is filed under both <strong>First-Order Logic</strong> and <strong>Model Theory</strong>, so the category filter on the home page has something real to filter on.</p>
+
+      </div>
+    </content>
+  </entry>
+</feed>
