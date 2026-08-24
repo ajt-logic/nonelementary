@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nonelementary</title>
+    <title>Not first-order, not easy - nonelementary</title>
     <meta name="description" content="Notes from a long return to mathematical logic and model theory.">
     <meta name="author" content="AJT">
-    <link rel="canonical" href="https://nonelementary.com/">
+    <link rel="canonical" href="https://nonelementary.com/posts/not-first-order-not-easy.html">
     <link rel="alternate" type="application/rss+xml" title="nonelementary RSS Feed" href="https://nonelementary.com/rss.xml">
     <link rel="alternate" type="application/atom+xml" title="nonelementary Atom Feed" href="https://nonelementary.com/atom.xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.css" integrity="sha384-u1zONI5gPXUx0UKI62c75/zww972y0v2rSK5ZYlVdS6xEuWDeZWUI66v6t1gvlXJ" crossorigin="anonymous">
@@ -629,44 +629,27 @@ footer a:hover {
     
     <main>
         
-    
-    <div class="category-filter">
-      <button class="category-btn active" data-category="all">All</button>
-      <button class="category-btn" data-category="first-order logic">First-Order Logic</button><button class="category-btn" data-category="model theory">Model Theory</button>
-    </div>
-  
-    <ul class="post-list">
-      
-    <li data-categories="first-order logic model theory">
-      <h2 class="post-title">
-        <a href="/posts/katex-test.html">KaTeX Test — Substitution and a Short Proof</a>
-      </h2>
-      <div class="post-date">
-        <span class="date-text">August 24, 2026</span>
-        
-          <span class="categories">
-            <span class="category">First-Order Logic</span> <span class="category">Model Theory</span>
-          </span>
-      </div>
-      <p class="post-excerpt">A test post exercising inline math, displayed equations, heavy sub/superscripts, and a short numbered proof.</p>
-    </li>
-  
-    <li data-categories="model theory">
-      <h2 class="post-title">
-        <a href="/posts/not-first-order-not-easy.html">Not first-order, not easy</a>
-      </h2>
-      <div class="post-date">
-        <span class="date-text">August 24, 2026</span>
+    <article class="entry">
+      <div class="post-meta">
+        <span class="date-text"><time datetime="2026-08-24T00:00:00.000Z">August 24, 2026</time></span>
         
           <span class="categories">
             <span class="category">Model Theory</span>
           </span>
       </div>
-      <p class="post-excerpt">Why the blog is named after a theorem about finiteness, and what it's for.</p>
-    </li>
-  
-    </ul>
-    
+      <div class="content">
+        <h1>Not first-order, not easy</h1>
+<p>In model theory, a class of structures is <em>elementary</em> if some single first-order theory axiomatises it exactly: $K$ is elementary iff there is a theory $T$ with $K = \{M : M \vDash T\}$. Most properties a working mathematician reaches for turn out not to be elementary, and finiteness is the standard example — the proof is short enough to write out in full.</p>
+<p>Suppose $T$ is a first-order theory, in some language $\mathcal{L}$, with arbitrarily large finite models — a theory of groups, say, or of linear orders — and suppose, for contradiction, that every model of $T$ is finite. For each $n \geq 1$, let</p>
+<div class="katex-display-wrapper">$$\varphi_n \;\equiv\; \exists x_1 \cdots \exists x_n \bigwedge_{1 \le i &lt; j \le n} x_i \neq x_j,$$</div>
+<p>the sentence asserting at least $n$ distinct elements, and set $\Gamma = T \cup \{\varphi_n : n \in \mathbb{N}\}$. Any finite subset $\Gamma_0 \subseteq \Gamma$ mentions only finitely many of the $\varphi_n$, so some $N$ bounds the ones it contains; since $T$ has a finite model with at least $N$ elements, $\Gamma_0$ is satisfiable. By compactness, $\Gamma$ is satisfiable too — there is some $M \vDash \Gamma$. But $M \vDash \varphi_n$ for every $n$, so $M$ is infinite, while $M \vDash T$, contradicting the assumption that every model of $T$ is finite. No first-order theory can have exactly the finite structures as its models: finiteness is not elementary. Well-ordering fails to be elementary for the same reason, and so does torsion in groups.</p>
+<p><em>Nonelementary</em> is that theorem, and also a joke about how the subject feels twenty years after I last did any of it seriously.</p>
+<p>I wrote an undergraduate thesis on Gödel&#39;s incompleteness theorems two decades ago. After that came a master&#39;s in logic and formal grammar, a PhD in computational linguistics, and a career in AI, over the course of which most of the logic itself quietly fell out of my head. This blog is where it&#39;s getting put back — evenings and weekends, alongside full-time work, which makes it a multi-year project rather than a course with an end date.</p>
+<p>The field I work in now has no shortage of people who can build systems, and a real shortage of people who understand what is underneath them. I would like to be in the second group. I don&#39;t think there is a fast way to get there: it takes doing the proofs rather than reading about them, and it takes years rather than weekends.</p>
+<p>What ends up here will mostly be notes from that work — proofs that took longer than they should have, places where the intuition was wrong, occasionally some history or philosophy when it changes how a piece of mathematics reads. There is no fixed schedule, and no promise that the whole plan survives contact with the material.</p>
+
+      </div>
+    </article>
   
     </main>
     
@@ -676,54 +659,6 @@ footer a:hover {
         <p>Powered by <a href="https://github.com/aarnetalman/monoblogger">MonoBlogger</a></p>
     </footer>
     
-<script>
-  // Category filter
-  document.addEventListener('DOMContentLoaded', function () {
-    const buttons = Array.from(document.querySelectorAll('.category-btn'));
-    const items   = Array.from(document.querySelectorAll('.post-list li'));
-
-    function setActive(btn) {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    }
-
-    function applyFilter(category) {
-      const cat = (category || 'all').toLowerCase();
-      items.forEach(li => {
-        const categoriesStr = (li.dataset.categories || '').toLowerCase();
-        if (cat === 'all' || categoriesStr.includes(cat)) {
-          li.classList.remove('hidden');
-        } else {
-          li.classList.add('hidden');
-        }
-      });
-    }
-
-    // Click -> filter
-    buttons.forEach(btn => {
-      btn.addEventListener('click', function () {
-        setActive(this);
-        applyFilter(this.dataset.category);
-        // Optional: reflect in URL hash for shareability
-        const c = this.dataset.category;
-        history.replaceState(null, '', c === 'all' ? location.pathname : `#cat=${encodeURIComponent(c)}`);
-      });
-    });
-
-    // Optional: read initial filter from URL hash (#cat=ai)
-    const m = location.hash.match(/#cat=([^&]+)/);
-    if (m) {
-      const wanted = decodeURIComponent(m[1]).toLowerCase();
-      const btn = buttons.find(b => b.dataset.category === wanted);
-      if (btn) { setActive(btn); applyFilter(wanted); return; }
-    }
-
-    // Default: All
-    const defaultBtn = buttons.find(b => b.dataset.category === 'all');
-    if (defaultBtn) { setActive(defaultBtn); applyFilter('all'); }
-  });
-</script>
-
     
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.js" integrity="sha384-ykMNcWQhhTUb0YV9SPpPUFURHZ+tWmubkakGBP+OgNK/UXdO2gtzglWx0Rj9hnO3" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>

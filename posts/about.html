@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nonelementary</title>
+    <title>About - nonelementary</title>
     <meta name="description" content="Notes from a long return to mathematical logic and model theory.">
     <meta name="author" content="AJT">
-    <link rel="canonical" href="https://nonelementary.com/">
+    <link rel="canonical" href="https://nonelementary.com/posts/about.html">
     <link rel="alternate" type="application/rss+xml" title="nonelementary RSS Feed" href="https://nonelementary.com/rss.xml">
     <link rel="alternate" type="application/atom+xml" title="nonelementary Atom Feed" href="https://nonelementary.com/atom.xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.css" integrity="sha384-u1zONI5gPXUx0UKI62c75/zww972y0v2rSK5ZYlVdS6xEuWDeZWUI66v6t1gvlXJ" crossorigin="anonymous">
@@ -629,44 +629,19 @@ footer a:hover {
     
     <main>
         
-    
-    <div class="category-filter">
-      <button class="category-btn active" data-category="all">All</button>
-      <button class="category-btn" data-category="first-order logic">First-Order Logic</button><button class="category-btn" data-category="model theory">Model Theory</button>
-    </div>
-  
-    <ul class="post-list">
-      
-    <li data-categories="first-order logic model theory">
-      <h2 class="post-title">
-        <a href="/posts/katex-test.html">KaTeX Test — Substitution and a Short Proof</a>
-      </h2>
-      <div class="post-date">
-        <span class="date-text">August 24, 2026</span>
-        
-          <span class="categories">
-            <span class="category">First-Order Logic</span> <span class="category">Model Theory</span>
-          </span>
+    <article class="entry">
+      <div class="content">
+        <h1>About</h1>
+<p>nonelementary is written by AJT. Pseudonymous — no real name, no employer attached to this.</p>
+<p>Twenty years ago: an undergraduate thesis on Gödel&#39;s incompleteness theorems. Since then, a master&#39;s in logic and formal grammar, a PhD in computational linguistics, a career in AI, and along the way most of the logic itself got set aside. This blog is where it&#39;s being rebuilt, evenings and weekends, alongside full-time work — a multi-year project rather than a course with an end date.</p>
+<p><strong>Why.</strong> The field I work in has more people who can build systems than people who understand what&#39;s underneath them. I&#39;d like to be in the second group, and I don&#39;t think there&#39;s a shortcut to it. It takes doing the proofs, not reading about them, and it takes years rather than weekends.</p>
+<p><strong>The plan.</strong> Year one: set theory and first-order logic (Enderton, then Bell &amp; Machover). Year two: model theory (Marker and Hodges, in parallel). Years three and four: a specialisation, then an attempt at something original. Alongside all of that, at roughly two hours a week: the history and philosophy of logic — the foundational crisis of the 1920s, then Tarski, then structuralism and the parts of philosophy of science and formal semantics that grew out of model theory.</p>
+<p><strong>What to expect.</strong> Notes from the actual work: proofs that took longer than expected, places where intuition failed, occasionally some history or philosophy when it changes how the mathematics reads. No fixed schedule, and no guarantee the plan survives contact with the material.</p>
+<p>Categories in use: Set Theory, First-Order Logic, Model Theory, History, Philosophy.</p>
+<p>Elsewhere: <a href="https://x.com/logic_phd">X</a>.</p>
+
       </div>
-      <p class="post-excerpt">A test post exercising inline math, displayed equations, heavy sub/superscripts, and a short numbered proof.</p>
-    </li>
-  
-    <li data-categories="model theory">
-      <h2 class="post-title">
-        <a href="/posts/not-first-order-not-easy.html">Not first-order, not easy</a>
-      </h2>
-      <div class="post-date">
-        <span class="date-text">August 24, 2026</span>
-        
-          <span class="categories">
-            <span class="category">Model Theory</span>
-          </span>
-      </div>
-      <p class="post-excerpt">Why the blog is named after a theorem about finiteness, and what it's for.</p>
-    </li>
-  
-    </ul>
-    
+    </article>
   
     </main>
     
@@ -676,54 +651,6 @@ footer a:hover {
         <p>Powered by <a href="https://github.com/aarnetalman/monoblogger">MonoBlogger</a></p>
     </footer>
     
-<script>
-  // Category filter
-  document.addEventListener('DOMContentLoaded', function () {
-    const buttons = Array.from(document.querySelectorAll('.category-btn'));
-    const items   = Array.from(document.querySelectorAll('.post-list li'));
-
-    function setActive(btn) {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    }
-
-    function applyFilter(category) {
-      const cat = (category || 'all').toLowerCase();
-      items.forEach(li => {
-        const categoriesStr = (li.dataset.categories || '').toLowerCase();
-        if (cat === 'all' || categoriesStr.includes(cat)) {
-          li.classList.remove('hidden');
-        } else {
-          li.classList.add('hidden');
-        }
-      });
-    }
-
-    // Click -> filter
-    buttons.forEach(btn => {
-      btn.addEventListener('click', function () {
-        setActive(this);
-        applyFilter(this.dataset.category);
-        // Optional: reflect in URL hash for shareability
-        const c = this.dataset.category;
-        history.replaceState(null, '', c === 'all' ? location.pathname : `#cat=${encodeURIComponent(c)}`);
-      });
-    });
-
-    // Optional: read initial filter from URL hash (#cat=ai)
-    const m = location.hash.match(/#cat=([^&]+)/);
-    if (m) {
-      const wanted = decodeURIComponent(m[1]).toLowerCase();
-      const btn = buttons.find(b => b.dataset.category === wanted);
-      if (btn) { setActive(btn); applyFilter(wanted); return; }
-    }
-
-    // Default: All
-    const defaultBtn = buttons.find(b => b.dataset.category === 'all');
-    if (defaultBtn) { setActive(defaultBtn); applyFilter('all'); }
-  });
-</script>
-
     
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.js" integrity="sha384-ykMNcWQhhTUb0YV9SPpPUFURHZ+tWmubkakGBP+OgNK/UXdO2gtzglWx0Rj9hnO3" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
